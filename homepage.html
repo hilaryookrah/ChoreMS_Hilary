@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="homepage.html" class="logo">
+                    <span class="nav-item">Chore MS</span>
+                </a>
+            </li>
+            
+            
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="manageChores.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Manage Chores</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="ChoreAssign.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="nav-item">Assign Chores</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="Settings.html">
+                    <i class='bx bxs-cog'></i>
+                    <span class="nav-item">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="trial.html" class="keluar">
+                    <i class='bx bx-log-in'></i>
+                    <span class="nav-item">Log Out</span>
+                </a>
+            </li>
+        </ul>
+        
+    </nav>
+    <a href="profile.html" class="upper-right-link">Hilary A. Osei-Okrah</a>
+    <div class="container">
+        <a href="manageChores.html" class="stat-link">
+            <div class="stat-container">
+                <div class="circle" id="completedCircle">0</div>
+                Completed Jobs
+        
+                <div class="circle" id="inProgressCircle">0</div>
+                In Progress Jobs
+
+                <div class="circle" id="incompleteCircle">0</div>
+                Incomplete Jobs
+            </div>
+        </a>
+    </div>
+    
+
+
+    <script src = "manageChores.js"></script>
+</body>
+</html>

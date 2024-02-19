@@ -1,0 +1,174 @@
+/* Link Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-container {
+    text-align: center;
+    padding: 20px; 
+    background-color: #dc610f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%; 
+}
+
+
+.circle {
+    width: 60px; 
+    height: 60px; 
+    background-color: #1692c8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; 
+    margin-bottom: 5px; 
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #ec6136;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a {
+    position: relative;
+    color: rgb(8, 8, 7);
+    font-size: 15px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+i {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover {
+    background: #fccbbc;
+}
+
+nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.keluar {
+    position: absolute;
+    bottom: 0;
+}
+.upper-right-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #070707;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; 
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: #dc7012; 
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+.form-button:hover {
+    background-color: #fcaf67; 
+}
+#choreTable {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#choreTable th, #choreTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#choreTable th {
+    background-color: #dc7012;
+    color: white;
+}
+
+#choreTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#choreTable tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+    <title>User Settings</title>
+</head>
+<body>
+<div class="container-wrapper">
+<header>
+    <h1>User Settings</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Profile Picture</h2>
+        <input type="file" id="profilePictureInput" accept="image/*">
+        <button onclick="uploadProfilePicture()">Upload</button>
+        <div id="profilePicturePreview"></div>
+    </section>
+
+    <section>
+        <h2>Name</h2>
+        <input type="text" id="nameInput">
+        <button onclick="updateName()">Save Name</button>
+    </section>
+
+    <section>
+        <h2>Change Password</h2>
+        <input type="password" id="currentPassword" placeholder="Current Password">
+        <input type="password" id="newPassword" placeholder="New Password">
+        <button onclick="changePassword()">Change Password</button>
+    </section>
+
+    <section>
+        <h2>Report an Issue</h2>
+        <textarea id="issueDescription" placeholder="Describe the issue"></textarea>
+        <button onclick="reportIssue()">Submit Report</button>
+    </section>
+</div>
+</div>
+<script src="settings.js"></script>
+</body>
+</html>

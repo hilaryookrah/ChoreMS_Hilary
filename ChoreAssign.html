@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+                        <span class="nav-item">Chore MS</span>
+                    </a>
+                </li>
+        
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user'></i>
+                        <span class="nav-item">Profile</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="manageChores.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="nav-item">Manage Chores</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ChoreAssign.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="nav-item">Assign Chores</span>
+                    </a>
+                </li>
+    
+    
+                <li>
+                    <a href="Settings.html">
+                        <i class='bx bxs-cog'></i>
+                        <span class="nav-item">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trial.html" class="keluar">
+                        <i class='bx bx-log-in'></i>
+                        <span class="nav-item">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+        <a href="profile.html" class="upper-right-link">Hilary A. Osei-Okrah</a>
+
+        <div>
+            <form id="choreForm">
+                <label for="choreName" class="form-label">Chore Name:</label>
+                <input type="text" name="choreName" id="choreName" class="form-input" placeholder="Enter chore name" required>
+            
+                <label for="assignedBy" class="form-label">Assigned By:</label>
+                <input type="text" name="assignedBy" id="assignedBy" class="form-input" placeholder="Enter assigned by" required>
+            
+                <select name="choreStatus" id="choreStatus" class="form-input" required>
+                    <option value="Pending">Pending</option>
+                    <option value="Incomplete">Incomplete</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            
+                <label for="dueDate" class="form-label">Due Date:</label>
+                <input type="date" name="dueDate" id="dueDate" class="form-input" required>
+            
+                <button type="button" onclick="addChore()" class="form-button">Add Chore</button>
+            </form>
+            
+        </div>
+
+        <table id="choreTable">
+            <thead>
+                <tr>
+                    <th>Chore ID</th>
+                    <th>Chore Name</th>
+                    <th>Chore Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <script src ="ChoreAssign.js"></script>
+</body>
+</html>
