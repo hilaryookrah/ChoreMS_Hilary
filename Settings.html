@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="settings.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>User Settings</title>
 </head>
 <body>
@@ -40,6 +41,48 @@
     </section>
 </div>
 </div>
-<script src="settings.js"></script>
+<script>
+    
+function uploadProfilePicture() {
+    const profilePictureInput = document.getElementById('profilePictureInput');
+    const preview = document.getElementById('profilePicturePreview');
+
+    const file = profilePictureInput.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            const img = new Image();
+            img.src = e.target.result;
+            preview.innerHTML = '';
+            preview.appendChild(img);
+        };
+
+        reader.readAsDataURL(file);
+    }
+}
+
+function updateName() {
+    
+    const nameInput = document.getElementById('nameInput');
+    const newName = nameInput.value;
+    swal('Name updated successfully: ' + newName);
+}
+
+function changePassword() {
+    
+    const currentPassword = document.getElementById('currentPassword').value;
+    const newPassword = document.getElementById('newPassword').value;
+    swal('Password changed successfully');
+}
+
+function reportIssue() {
+   
+    const issueDescription = document.getElementById('issueDescription').value;
+    Swal.fire('Issue reported successfully:\n' + issueDescription);
+}
+
+</script>
 </body>
 </html>
