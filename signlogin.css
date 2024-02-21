@@ -14,7 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.login_box {
+.signup_box {
     background-color: #fff;
     border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -24,11 +24,13 @@ body {
     max-width: 100%;
     min-height: 490px;
     margin-top: 20px;
-    /* 
-    
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
     overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-    margin-top: 20px; */ 
 }
